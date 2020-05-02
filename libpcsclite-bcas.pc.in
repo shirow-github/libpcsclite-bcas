@@ -1,0 +1,17 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+includedir=@includedir@
+datarootdir=@datarootdir@
+libdir=@libdir@
+datadir=@datadir@
+pkgincludedir=@includedir@/@PACKAGE@
+pkgdatadir=${datadir}/@PACKAGE@
+pkglibdir=${libdir}/@PACKAGE@
+pluginsdir=${pkglibdir}/plugins
+
+Name: PC/SC Lite (B-CAS) library 
+Description: PC/SC Lite (B-CAS) libraries
+Version: @VERSION@
+Cflags: -I${includedir}
+Requires.private: @PC_REQUIRE@
+Libs: -L${libdir} -lpcsclite @PC_LIBS@
