@@ -1,0 +1,6 @@
+Crypto.o
+Decoder-ECM.o
+Keys.o
+Keyset.o
+winscard.o
+libpcsclite.so.1.0.0
