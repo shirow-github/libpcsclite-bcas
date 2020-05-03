@@ -7,6 +7,7 @@
 .libs/
 autom4te.cache/
 m4/*.m4
+src/.dirstamp
 
 libpcsclite.so.1.0.0
 libpcsclitebcas.la
@@ -22,6 +23,7 @@ config.h.in*
 config.status
 config.sub
 configure
+configure.scan
 depcomp
 install-sh
 libtool
