@@ -4,7 +4,7 @@ lib_LTLIBRARIES = libpcsclitebcas.la
 
 libpcsclitebcas_la_SOURCES = src/Crypto.cpp src/Decoder-ECM.cpp src/Keys.cpp src/Keyset.cpp src/winscard.cpp
 
-libpcsclitebcas_la_LIBADD = $(AM_LIBS) $(pcsclite_LIBS) $(PCSC_LIBS)
+libpcsclitebcas_la_LIBADD = $(AM_LIBS) $(PCSC_LIBS)
 
 libpcsclitebcas_la_CXXFLAGS = -g -fPIC -O2 -I /usr/include/PCSC 
 
