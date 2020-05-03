@@ -35,6 +35,5 @@ AC_CHECK_HEADER_STDBOOL
 # Checks for library functions.
 AC_CHECK_FUNCS([memset])
 
-#AC_CONFIG_HEADERS([/usr/include/PCSC/pcsclite.h])
 AC_CONFIG_FILES([Makefile src/libpcsclite-bcas.pc])
 AC_OUTPUT
