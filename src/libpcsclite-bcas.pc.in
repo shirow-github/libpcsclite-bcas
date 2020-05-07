@@ -1,17 +1,13 @@
 prefix=@prefix@
 exec_prefix=@exec_prefix@
-includedir=@includedir@
-datarootdir=@datarootdir@
 libdir=@libdir@
-datadir=@datadir@
-pkgincludedir=@includedir@/@PACKAGE@
-pkgdatadir=${datadir}/@PACKAGE@
-pkglibdir=${libdir}/@PACKAGE@
-pluginsdir=${pkglibdir}/plugins
+includedir=@includedir@/libpcsclite-bcas
+usbdropdir=/usr/lib/pcsc/drivers
+serialconfdir=/etc/reader.conf.d
 
-Name: PC/SC Lite (B-CAS) library 
-Description: PC/SC Lite (B-CAS) libraries
+Name: PCSC Lite (B-CAS)
+Description: PC/SC smart card interface (B-CAS)
 Version: @VERSION@
-Cflags: -I${includedir}
-Requires.private: @PC_REQUIRE@
-Libs: -L${libdir} -lpcsclitebcas @PC_LIBS@
+Libs: -L${libdir} -lpcsclitebcas
+Libs.private:
+Cflags: -I${includedir} -pthread
