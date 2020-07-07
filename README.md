@@ -7,6 +7,7 @@ libpcscliteを改造し、B-CASカードの動作をソフトウェアでエミ�
 ----
 ##  インストール方法
 ```bash
+$ sudo apt -y install autoconf libtool
 $ ./bootstrap  
 $ ./configure  
 $ make  
