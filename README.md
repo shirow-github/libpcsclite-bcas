@@ -1,6 +1,6 @@
 # libpcsclite-bcas
 
-*Current Version:* 1.0.0
+*Current Version:* 1.0.1
 
 libpcscliteを改造し、B-CASカードの動作をソフトウェアでエミュレートします。
 
